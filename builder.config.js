@@ -6,7 +6,7 @@ module.exports = {
   artifactName: "${productName} setup.${ext}",
   // The below is need so that `electron-builder` won't search
   // for public/electron.js but rather in the paths
-  // included in `files` property. electron/electron.js our case.
+  // included in `files` property. electron/index.js our case.
   extends: null,
   files: ["build/**/*", "electron/**/*", "package.json"],
   directories: { output: "./dist/${version}" },
